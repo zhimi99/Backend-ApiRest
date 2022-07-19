@@ -1,0 +1,32 @@
+INSERT INTO regiones (id, nombre) VALUES (1, 'Africa');
+INSERT INTO regiones (id, nombre) VALUES (2, 'Europa');
+INSERT INTO regiones (id, nombre) VALUES (3, 'sudamerica');
+
+
+
+INSERT INTO clientes (nombre, apellido, email, create_at, region_id) VALUES ('Jesus','Zhiminaicela','jesus@gmail.com','2022-10-02', 1);
+INSERT INTO clientes (nombre, apellido, email, create_at, region_id) VALUES ('Alan','arevalo','jesus@gmail.com','2022-11-02', 2);
+INSERT INTO clientes (nombre, apellido, email, create_at, region_id) VALUES ('maria','arcentalez','jesus@gmail.com','2022-12-02', 3);
+INSERT INTO clientes (nombre, apellido, email, create_at, region_id) VALUES ('mateo','segarra','jesus@gmail.com','2022-10-22', 1);
+INSERT INTO clientes (nombre, apellido, email, create_at, region_id) VALUES ('isac','Zhiminaicela','jesus@gmail.com','2022-11-12', 2);
+INSERT INTO clientes (nombre, apellido, email, create_at, region_id) VALUES ('Jesus','Zhiminaicela','jesus@gmail.com','2022-10-02', 3);
+INSERT INTO clientes (nombre, apellido, email, create_at, region_id) VALUES ('Alan','arevalo','jesus@gmail.com','2022-11-02', 1);
+INSERT INTO clientes (nombre, apellido, email, create_at, region_id) VALUES ('maria','arcentalez','jesus@gmail.com','2022-12-02', 2);
+INSERT INTO clientes (nombre, apellido, email, create_at, region_id) VALUES ('mateo','segarra','jesus@gmail.com','2022-10-22', 3);
+INSERT INTO clientes (nombre, apellido, email, create_at, region_id) VALUES ('isac','Zhiminaicela','jesus@gmail.com','2022-11-12', 1);
+INSERT INTO clientes (nombre, apellido, email, create_at, region_id) VALUES ('Jesus','Zhiminaicela','jesus@gmail.com','2022-10-02', 2);
+INSERT INTO clientes (nombre, apellido, email, create_at, region_id) VALUES ('Alan','arevalo','jesus@gmail.com','2022-11-02', 3);
+INSERT INTO clientes (nombre, apellido, email, create_at, region_id) VALUES ('maria','arcentalez','jesus@gmail.com','2022-12-02', 1);
+INSERT INTO clientes (nombre, apellido, email, create_at, region_id) VALUES ('mateo','segarra','jesus@gmail.com','2022-10-22', 2);
+INSERT INTO clientes (nombre, apellido, email, create_at, region_id) VALUES ('isac','Zhiminaicela','jesus@gmail.com','2022-11-12', 3);
+
+
+INSERT INTO usuarios (username, password, enabled, nombre, apellido, mail) VALUES('andres','$2a$10$qluKXNToJAIX6MlKS8wW5OFxH10.lcH4uaj/1d6cjywI3.lWu4M/O',1,'andres','Guzman','andresguzguz@gmail.com');
+INSERT INTO usuarios (username, password, enabled, nombre, apellido, mail) VALUES('admin' ,'$2a$10$fh0z9Ybvm/MX5yx59ul1XuSJ9P9GZwUccq9AhLr7qQ/fTLH7N8Kim',1,'pedro','Segas','pedrosega@gmail.com');
+
+INSERT INTO roles (nombre) VALUES('ROLE_USER'); 
+INSERT INTO roles (nombre) VALUES('ROLE_ADMIN'); 
+
+INSERT INTO usuarios_roles (usuario_id, role_id) VALUES(1, 1);
+INSERT INTO usuarios_roles (usuario_id, role_id) VALUES(2, 2);
+INSERT INTO usuarios_roles (usuario_id, role_id) VALUES(2, 1);

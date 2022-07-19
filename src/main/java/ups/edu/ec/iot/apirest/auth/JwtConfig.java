@@ -1,0 +1,76 @@
+package ups.edu.ec.iot.apirest.auth;
+
+public class JwtConfig {
+	
+	public static final String LLAVE_SECRETA = "alguna.clave.secreta.12345678";
+	
+	public static final String RSA_PRIVADA = "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";
+
+	public static final String RSA_PUBLICA = "MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAp8N0lkd+xMrciYY5PHYp\n"
+			+ "mEoOu8Q6sSpoEWdpr//q2TBkhBxjj8iPAzIWEkPGv45zX9J6A5Vv9N4ZzZMWPLSK\n"
+			+ "oKSEOGlX/Lpzmb6hLnblSAXcSZUxuBkSaFkPx4EHmz1IH/yvVUkuyuYZs5NQt+MU\n"
+			+ "r7ktm/pRJ5Lo7WWW5Y0/9vbN9cmVt9akhWbVei2XRFbNu84alZdTo+C5KQZGjb65\n"
+			+ "uZY/eBSaHk0gwjndAklT8XZLvVTzqtiSRV4YHm+TEuXgDbyyF7/l6C0wWRzGk23U\n"
+			+ "67+D2Kvb5hUVwz1H9D4wbIvxcznfj5WN3Fy1P8CEwFwbkW9IztAM6Wqo7UEbYCpS\n"
+			+ "qFlISrMphbSgmFKgTd26z9qB78UBWsjW4VG6F1gnNXRhQrBCTYqi/XRW9v6ARtRj\n"
+			+ "K+bNI2bPIT/bGmwOFQbrZny+7+vY0TLqwKEoj0hEPZDYFCUWk7gKFXYh2TJuGAMj\n"
+			+ "lG8gbp391ytj3sl+S60Uv4Bx284QbivIOaqs1VAWaCekY8YYlAG+mJnH66E9oSq+\n"
+			+ "rS58PG/E5uwQWqfrdfA6inwFd9p991oL7BFEUOpRytit+tanacYFB2sIeY8qGveV\n"
+			+ "aqo4iDkVPKvFovt34DR2+pNQ5x6JE90z55RIu1+SVoFHDCMDiMfC/oD0OxpzZwqw\n"
+			+ "N8NFto0IH10bGvwMS2G9/BsCAwEAAQ==";
+			
+			
+			
+			
+}
